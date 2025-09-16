@@ -5,9 +5,9 @@ export default function Home() {
   return (
     <div className=" bg-[#1d1d1d] text-[#f7f7f7] px-6 lg:px-24 sm:px-8 md:px-12 py-6 lg:py-12">
       <main className="">
-         <h1 className="text-2xl sm:text-6xl mt-3  font-sans">Projects `Made</h1>
+         <h1 className="text-2xl sm:text-6xl mt-3  font-sans">Projects &#96;Made</h1>
         <div className=" flex  items-center justify-between ">
-            <h1 className="text-2xl sm:text-6xl  font-sans"> Easier^ </h1>
+            <h1 className="text-2xl sm:text-6xl  font-sans"> Easier&#94; </h1>
             <p className="text-2xl sm:text-6xl">/</p>
             <p className="text-xl hidden sm:block">Easily Organize your <br/> 
              project work
@@ -20,7 +20,7 @@ export default function Home() {
         
           <Image src="/Hero img.png" alt="dashboard" width={1400} height={600} className="mt-10 rounded-lg mx-auto"/>
     <h1 className="mt-7 sm:mt-12 text-2xl sm:text-6xl">To enhance the growth of your <br/>
-     Projects, it's essential to expedite<br/>
+     Projects, it&apos;s essential to expedite<br/>
      the releaseof new flow.</h1>
         <div className=" mt-10 flex flex-col sm:flex-row sm:items-center sm:gap-20">
           <Image 
