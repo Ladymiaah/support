@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Afacad } from "next/font/google"; // ✅ import Afacad
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import Header from "./Header";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// ✅ Load Afacad font with desired weights
+const afacad = Afacad({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"], // add weights you need
+  variable: "--font-afacad", // optional CSS variable
 });
 
 export const metadata: Metadata = {
@@ -25,8 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${afacad.variable} antialiased`} // ✅ using Afacad variable
       >
+        <Header />
         {children}
       </body>
     </html>
